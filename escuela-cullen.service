@@ -1,0 +1,29 @@
+[Unit]
+Description=Escuela N° 637 Domingo Cullen - Servidor de Contacto
+Documentation=https://github.com/pablomonsalvo/escuela-cullen-contacto
+After=network.target
+
+[Service]
+Type=simple
+User=pol
+WorkingDirectory=/home/pol/Desktop/cursor-ai-1
+ExecStart=/usr/bin/node server.js
+Restart=always
+RestartSec=10
+Environment=NODE_ENV=production
+Environment=PORT=3000
+
+# Logs
+StandardOutput=journal
+StandardError=journal
+SyslogIdentifier=escuela-cullen
+
+# Security
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=strict
+ProtectHome=true
+ReadWritePaths=/home/pol/Desktop/cursor-ai-1
+
+[Install]
+WantedBy=multi-user.target 

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Escuela N° 637 "Domingo Cullen"</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1 class="school-title">
+                <i class="fas fa-graduation-cap"></i>
+                Escuela N° 637 "Domingo Cullen"
+            </h1>
+            <p class="school-subtitle">Formulario de Contacto</p>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <div class="container">
+            <div class="content-grid">
+                <!-- Información de la Escuela -->
+                <section class="school-info">
+                    <h2><i class="fas fa-info-circle"></i> Información de la Escuela</h2>
+                    <div class="info-card">
+                        <div class="info-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <strong>Dirección:</strong>
+                                <p>Avellaneda 3211, Santa Fe</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-clock"></i>
+                            <div>
+                                <strong>Horarios de Atención:</strong>
+                                <p>Lunes a Viernes: 8:00 - 18:00</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <strong>Teléfono:</strong>
+                                <p>+54 342 123-4567</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <strong>Email:</strong>
+                                <p>contacto@escuela637.edu.ar</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Formulario de Contacto -->
+                <section class="contact-form">
+                    <h2><i class="fas fa-envelope"></i> Envíanos tu Mensaje</h2>
+                    <form id="contactForm" class="form">
+                        <div class="form-group">
+                            <label for="nombre">Nombre Completo *</label>
+                            <input type="text" id="nombre" name="nombre" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="correo">Correo Electrónico *</label>
+                            <input type="email" id="correo" name="correo" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="telefono">Teléfono *</label>
+                            <input type="tel" id="telefono" name="telefono" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="motivo">Motivo de Contacto *</label>
+                            <select id="motivo" name="motivo" required>
+                                <option value="">Seleccione una opción</option>
+                                <option value="inscripcion">Inscripción</option>
+                                <option value="consulta">Consulta General</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="mensaje">Mensaje *</label>
+                            <textarea id="mensaje" name="mensaje" rows="5" required placeholder="Escriba su mensaje aquí..."></textarea>
+                        </div>
+
+                        <button type="submit" class="submit-btn">
+                            <i class="fas fa-paper-plane"></i>
+                            Enviar Mensaje
+                        </button>
+                    </form>
+
+                    <div id="message" class="message"></div>
+                </section>
+            </div>
+
+            <!-- Mapa de Google Maps -->
+            <section class="map-section">
+                <h2><i class="fas fa-map"></i> Ubicación</h2>
+                <div class="map-container">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3404.1234567890123!2d-60.71234567890123!3d-31.61234567890123!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzHCsDM2JzQ0LjQiUyA2MMKwNDInNDQuNCJX!5e0!3m2!1ses!2sar!4v1234567890123"
+                        width="100%" 
+                        height="450" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Escuela N° 637 "Domingo Cullen". Todos los derechos reservados.</p>
+            <p class="developer">Desarrollado por <strong>Pablo Monsalvo</strong></p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
