@@ -1,4 +1,6 @@
 # Página de Contacto - Escuela N° 637 "Domingo Cullen"
+![replica-1](/home/pol/Desktop/replica-de-cursor-ai-1-vsc/public/replica-cursor-ai-1-vsc.png)
+
 
 Una página web moderna y responsiva para el formulario de contacto de la Escuela N° 637 "Domingo Cullen" ubicada en Avellaneda 3211, Santa Fe.
 
@@ -204,6 +206,7 @@ Este proyecto está bajo la Licencia MIT. Ver el archivo `LICENSE` para más det
 - Especializado en aplicaciones web modernas
 - Contacto: [Tu email]
 
+![replica-1](/home/pol/Desktop/replica-de-cursor-ai-1-vsc/public/replica-cursor-2.png)
 ---
 
 © 2024 Escuela N° 637 "Domingo Cullen". Todos los derechos reservados.# replica-cursor-ai-1-vsc

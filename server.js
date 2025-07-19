@@ -15,7 +15,7 @@ app.use(express.static('public'));
 
 // Ruta principal
 app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, 'public', 'index.html'));
+    res.sendFile(path.join(__dirname, 'public', 'index-1.html'));
 });
 
 // Ruta para manejar el envío del formulario
@@ -108,6 +108,22 @@ app.get('/api/contactos', (req, res) => {
 });
 
 app.listen(PORT, () => {
+    const ahora = new Date();
+
+    // Formato: YYYY-MM-DD HH:mm:ss
+    const fechaYHora = ahora.toLocaleString('es-AR', {
+        year: 'numeric',
+        month: '2-digit',
+        day: '2-digit',
+        hour: '2-digit',
+        minute: '2-digit',
+        second: '2-digit',
+        hour12: false,
+        timeZone: 'America/Argentina/Buenos_Aires'
+    });
+
     console.log(`🚀 Servidor corriendo en http://localhost:${PORT}`);
     console.log('👨‍💻 Desarrollado por Pablo Monsalvo');
+    console.log(`🕒 Inicio del servidor: ${fechaYHora}`);
 });
+
